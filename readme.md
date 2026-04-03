@@ -8,7 +8,9 @@ Abdul Bari
 Michael Sambol
 Neetcode
 
-**Blind75**
+**Grind75**
 Make own document
+Started at day3
+
 
 
