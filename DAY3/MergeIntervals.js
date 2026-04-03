@@ -1,4 +1,4 @@
-//sorting and array
+//sorting and array: medium
 //sort intervals by start time, compare current intervals with previous
 //if overlaps then merge else push new intervals
 /**
