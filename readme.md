@@ -1,6 +1,6 @@
 **DialySolvedLeetCodeProblems**
 You can see solutions of leetcode problems here solved by Sweta Dahal
-This is  a documentation of my learning journey
+This is  a documentation of my learning journey.
 
 **Resources**
 Algo Monters Course
