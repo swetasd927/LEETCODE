@@ -1,0 +1,32 @@
+//https://leetcode.com/problems/middle-of-the-linked-list/description/?envType=problem-list-v2&envId=rab78cw1
+//mid level, linked list , two pointers
+
+
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+var middleNode = (head) => {
+    let slow = head;//1 steps
+    let fast = head;//2 steps
+
+    while(fast !== null && fast.next !== null) {
+        slow = slow.next;//one step forward
+        fast = fast.next.next; //two steps forward
+    }
+    return slow;
+};
+
+//use two pointers: 
+//slow : move 1 step
+//fast : move 2 steps
+//when fast reaches end, slow will be at the middle
+
+//tc: O(n), sc: O(1)[no extra memory]
