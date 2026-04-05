@@ -14,21 +14,22 @@
  * @param {TreeNode} root
  * @return {boolean}
  */
+
 var isBalanced = function(root) {
-    function checkHeight(node) {
+    function height(node) {
         if (!node) return 0;
 
-        let left = checkHeight(node.left);
-        if (left === -1) return -1;
+        const left = height(node.left);
+        const right = height(node.right);
 
-        let right = checkHeight(node.right);
-        if (right === -1) return -1; 
-
-        if (Math.abs(left - right) > 1) return -1;
+        if (left === -1 || right === -1 || Math.abs(left - right) > 1) {
+            return -1;
+        }
 
         return Math.max(left, right) + 1;
     }
-    return checkHeight(root) !== -1;
+
+    return height(root) !== -1;
 };
 
 //Checked height of each subtree using DFS and returned -1 early if any imbalance was found.
