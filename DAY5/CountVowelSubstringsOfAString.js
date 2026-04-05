@@ -24,6 +24,7 @@ var countVowelSubstrings = function(word) {
     return count;
 };
 
+
 //contain any vowels, count all 5 vowels: a e i o u
 
 //generate all strings

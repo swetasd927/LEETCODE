@@ -28,3 +28,4 @@ var hasCycle = (head) => {
     return false;//no cycle
 };
 //tc: O(n), sc: O(1): no extra memory
+
