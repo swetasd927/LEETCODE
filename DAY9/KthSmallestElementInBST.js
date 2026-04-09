@@ -36,12 +36,13 @@ function kthSmallest(root, k) {
     return result;
 }
 
-//Traverse BST in sorted order and pick the kth element.
 
 /**
  *A BST is ordered: left < root < right.
-Doing inorder traversal visits nodes in sorted order.
-Keep a count while traversing; when count = k, that node is the answer.
-This works recursively or iteratively with a stack.
+ Doing inorder traversal visits nodes in sorted order.
+ Keep a count while traversing; when count = k, that node is the answer.
+ This works recursively or iteratively with a stack.
  */
+//Traverse BST in sorted order and pick the kth element.
+
 //Time: O(n), Space: O(h) (recursion stack)
