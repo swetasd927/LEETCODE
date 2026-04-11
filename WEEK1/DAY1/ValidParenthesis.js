@@ -74,3 +74,18 @@ var isValid = (s) => {
 
 //Time complexity: we iterate through the string once: O(n)
 //Space complexity: : O(n):in the worst case (all opening brackets), the stack stores all characters.
+
+var isValid = function(s) {
+    let stack = [];
+    let map = { '(': ')', '{': '}', '[': ']' };
+
+    for (let char of s) {
+        if (map[char]) {
+            stack.push(map[char]);
+        } else if (stack.pop() !== char) {
+            return false;
+        }
+    }
+
+    return stack.length === 0;
+};
