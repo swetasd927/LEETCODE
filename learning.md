@@ -19,14 +19,14 @@ Time:O(n log n)
 Space:O(n)
 Stable:Yes
 
-Quick Sort: Picks a pivot and partitions array into smaller and larger elements, then recursively sorts them.
-Time:O(n log n) avg
-Space:O(log n)
+Heap Sort: Builds a heap and repeatedly extracts the maximum (or minimum) element to get a sorted array.
+Time:O(n log n)
+Space:O(1)
 Stable:No
 
-Heap Sort: Builds a heap and repeatedly extracts the maximum (or minimum) element to get a sorted array.
-Time:O(log n)
-Space:O(1)
+Quick Sort: Picks a pivot and partitions array into smaller and larger elements, then recursively sorts them.
+Time:O(n log n) best and average, O(n^2) worst
+Space:O(log n)
 Stable:No
 
 ## Imp
