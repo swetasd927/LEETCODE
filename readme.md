@@ -1,81 +1,261 @@
-**DialySolvedLeetCodeProblems**
-You can see solutions of leetcode problems here solved by Sweta Dahal
-This is  a documentation of my learning journey.
+# Daily Solved LeetCode Problems
 
-**Resources**
-Algo Monters Course
-Abdul Bari
-Michael Sambol
-Neetcode
+This repository is a personal documentation of my Data Structures and Algorithms (DSA) learning journey.
 
-**Grind75**
-Make own document
-Started at day3
+It contains structured notes and solutions to LeetCode problems solved by **Sweta Dahal**.
 
-1. Arrays & Hashmaps
-Array
-An array is a collection of elements stored in contiguous memory locations. It allows fast access using an index (O(1)), but insertion and deletion can be costly (O(n)) due to shifting elements.
+The goal of this repository is not just problem-solving, but also building a strong understanding of core concepts and patterns used in competitive programming and technical interviews.
 
-Key concepts: indexing, traversal, prefix sums, in-place operations, time-space tradeoffs.
+---
 
-Hashmap
-A hashmap (hash table) stores key-value pairs and allows average O(1) time for insert, delete, and lookup using a hash function.
+# Learning Journey
 
-Key concepts: hashing, collisions, load factor, frequency counting, fast lookup to reduce time complexity.
+I am following structured learning resources and solving problems daily as part of my **Grind 75** preparation.
 
-2. Two Pointers & Sliding Window
+### Grind 75 Progress
+- Started at **Day 3**
+- Consistently building topic-wise understanding
+- Documenting concepts for revision and mastery
 
-Two Pointers
-Two pointers use two indices to traverse a data structure, often from opposite ends or at different speeds. It helps reduce time complexity from O(n²) to O(n).
-Used mainly in sorted arrays or when comparing pairs.
+---
 
-Sliding Window
-Sliding window processes a subset of elements (window) that expands or shrinks dynamically.
-Key concepts: maintaining window state, expanding and shrinking conditions, handling substrings/subarrays efficiently.
+# Resources
 
-3. Trees (DFS & BFS)
-Tree
-A tree is a hierarchical data structure with nodes connected by edges, having no cycles. It consists of a root node and child nodes.
-Key concepts: root, leaf, height, depth, binary tree, binary search tree (BST).
+These are the main resources we can follow for learning DSA:
 
-DFS (Depth First Search)
-DFS explores as far as possible along a branch before backtracking. It is implemented using recursion or a stack.
-Types: preorder, inorder, postorder.
-BFS (Breadth First Search)
+- **Algo Monster Course**
+- **Abdul Bari (YouTube)**
+- **Michael Sambol (YouTube)**
+- **NeetCode**
+
+---
+
+# Topics Covered
+
+---
+
+## 1. Arrays & Hashmaps
+
+### Array
+
+An array is a linear data structure that stores elements in contiguous memory locations. Each element can be accessed directly using its index.
+
+### Properties:
+- Fast access using index → **O(1)**
+- Insertion and deletion are expensive → **O(n)** (due to shifting)
+
+### Key Concepts:
+- Indexing
+- Traversal
+- Prefix sums
+- In-place operations
+- Time vs Space optimization tradeoffs
+
+---
+
+### Hashmap
+
+A hashmap (hash table) stores data in key-value pairs and uses a hash function to map keys to indices.
+
+### Properties:
+- Average time complexity: **O(1)** for insert, delete, and lookup
+
+### Key Concepts:
+- Hashing function
+- Collision handling techniques (chaining, open addressing)
+- Load factor
+- Frequency counting
+- Fast lookup optimization
+
+---
+
+## 2. Two Pointers & Sliding Window
+
+---
+
+### Two Pointers
+
+The two-pointer technique uses two indices to traverse a data structure efficiently, often reducing brute force solutions.
+
+### Why use it?
+- Reduces complexity from **O(n²) → O(n)**
+
+### Use Cases:
+- Sorted arrays
+- Pair sum problems
+- Reversing arrays
+- Partitioning problems
+
+---
+
+### Sliding Window
+
+A sliding window maintains a subarray (window) and moves it across the data structure dynamically.
+
+### Key Concepts:
+- Expanding window
+- Shrinking window
+- Maintaining state efficiently
+- Subarray / substring optimization
+
+### Use Cases:
+- Longest substring problems
+- Fixed/variable size window problems
+
+---
+
+## 3. Trees (DFS & BFS)
+
+---
+
+### Tree
+
+A tree is a hierarchical data structure consisting of nodes connected by edges, with no cycles.
+
+### Key Concepts:
+- Root node
+- Leaf node
+- Height and depth
+- Binary Tree
+- Binary Search Tree (BST)
+
+---
+
+### DFS (Depth First Search)
+
+DFS explores as deep as possible along a branch before backtracking.
+
+### Types:
+- Preorder (Root → Left → Right)
+- Inorder (Left → Root → Right)
+- Postorder (Left → Right → Root)
+
+### Implementation:
+- Recursion
+- Stack
+
+---
+
+### BFS (Breadth First Search)
+
 BFS explores nodes level by level using a queue.
-Used for shortest path in unweighted graphs or level order traversal.
 
-4. Graphs (DFS, BFS, Topological Sort)
-Graph
-A graph consists of nodes (vertices) and edges connecting them. It can be directed or undirected.
-Key concepts: adjacency list, adjacency matrix, cycles, connectivity.
+### Use Cases:
+- Level order traversal
+- Shortest path in unweighted trees
 
-DFS in Graph
-Used to explore all nodes deeply. Helps in cycle detection and connected components.
+---
 
-BFS in Graph
-Used for shortest path in unweighted graphs and level traversal.
+## 4. Graphs (DFS, BFS, Topological Sort)
 
-Topological Sort
-Topological sort is ordering of nodes in a Directed Acyclic Graph (DAG) such that for every directed edge u → v, u comes before v.
-Key concepts: in-degree, Kahn’s algorithm, DFS-based ordering.
+---
 
-5. Binary Search
-Binary search is an efficient algorithm to find an element in a sorted array by repeatedly dividing the search space in half.
-Key concepts: mid calculation, search space reduction, monotonic functions, binary search on answer.
+### Graph
 
-6. Dynamic Programming (DP)
-DP is used to solve problems by breaking them into smaller subproblems and storing their results to avoid recomputation.
-Key concepts: overlapping subproblems, optimal substructure, memoization, tabulation, state and transition definition.
+A graph is a set of nodes (vertices) connected by edges. It can be directed or undirected.
 
-7. Backtracking
-Backtracking is a recursive approach to solve problems by trying all possibilities and undoing choices when they don’t lead to a solution.
-Key concepts: recursion tree, choose-explore-unchoose, pruning invalid paths.
+### Key Concepts:
+- Adjacency list
+- Adjacency matrix
+- Cycles
+- Connectivity
 
-8. Heap (Priority Queue)
-A heap is a complete binary tree used to efficiently retrieve the minimum or maximum element.
-Key concepts: min heap, max heap, heap operations (insert, delete), priority queue usage.
+---
 
+### DFS (Graph)
 
+- Used for deep traversal
+- Helps in cycle detection
+- Used for connected components
 
+---
 
+### BFS (Graph)
+
+- Used for shortest path in unweighted graphs
+- Level-wise traversal
+
+---
+
+### Topological Sort
+
+Topological sorting is a linear ordering of nodes in a Directed Acyclic Graph (DAG).
+
+### Condition:
+For every directed edge `u → v`, node `u` must appear before `v`.
+
+### Key Concepts:
+- In-degree tracking
+- Kahn’s Algorithm (BFS approach)
+- DFS-based ordering
+
+---
+
+## 5. Binary Search
+
+Binary search is an efficient algorithm for finding elements in a sorted array by repeatedly dividing the search space in half.
+
+### Time Complexity:
+- **O(log n)**
+
+### Key Concepts:
+- Mid calculation
+- Search space reduction
+- Monotonic function idea
+- Binary search on answer problems
+
+---
+
+## 6. Dynamic Programming (DP)
+
+Dynamic Programming is a method for solving problems by breaking them into smaller overlapping subproblems and storing results.
+
+### Key Concepts:
+- Overlapping subproblems
+- Optimal substructure
+- Memoization (Top-down approach)
+- Tabulation (Bottom-up approach)
+- State definition
+- Transition relation
+
+---
+
+## 7. Backtracking
+
+Backtracking is a recursive technique that builds solutions step-by-step and removes them if they are invalid.
+
+### Key Concepts:
+- Recursion tree
+- Choose → Explore → Unchoose
+- Pruning invalid paths
+
+### Use Cases:
+- Permutations
+- Combinations
+- N-Queens
+- Subset problems
+
+---
+
+## 8. Heap (Priority Queue)
+
+A heap is a complete binary tree used to efficiently access the minimum or maximum element.
+
+### Key Concepts:
+- Min Heap
+- Max Heap
+- Insert operation
+- Delete (extract min/max)
+- Priority queue usage
+
+---
+
+# Goal
+
+To strengthen problem-solving skills, understand DSA deeply, and become interview-ready through consistent practice and structured learning.
+
+---
+
+#  Note
+
+This is a continuously evolving repository as I keep solving more problems and learning new patterns.
