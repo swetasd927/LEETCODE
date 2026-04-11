@@ -32,3 +32,19 @@ If only ASCII letters, space is O(128), otherwise O(n) for unicode
  * until the duplicate is removed. I track the max length of the window during 
  * this process. This gives O(n) time and O(min(n, charset)) space.”
  */
+
+//practice
+var lengthOfLongestSubstring = (s) => {
+    let set = new Set();
+    let left = 0, maxLen = 0;
+
+    for(let right = 0; right < s.length; right++){
+        while(set.has(s[right])){
+            set.delete(s[left]);
+            left++;
+        }
+        set.add(s[right]);
+        maxLen = Math.max(maxLen, right - left + 1);
+    }
+    return maxLen;
+}
