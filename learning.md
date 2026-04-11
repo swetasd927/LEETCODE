@@ -1,30 +1,30 @@
 # Sorting
-Bubble Sort: 
+Bubble Sort: Repeatedly swaps adjacent elements if they are in wrong order until array becomes sorted.
 Time: O(n²)
 Space:O(1)
 Stable:Yes
 
-Selection Sort:
+Selection Sort: Repeatedly selects the smallest element and places it at the beginning.
 Time: O(n²)
 Space:O(1)
 Stable:No
 
-Insertion Sort: 
+Insertion Sort: Builds the sorted array one element at a time by inserting elements into their correct position.
 Time: O(n²)
 Space:O(1)
 Stable:Yes
 
-Merge Sort:
+Merge Sort: Divides array into halves, sorts them recursively, then merges sorted halves.
 Time:O(n log n)
 Space:O(n)
 Stable:Yes
 
-Quick Sort:
+Quick Sort: Picks a pivot and partitions array into smaller and larger elements, then recursively sorts them.
 Time:O(n log n) avg
 Space:O(log n)
 Stable:No
 
-Heap Sort:
+Heap Sort: Builds a heap and repeatedly extracts the maximum (or minimum) element to get a sorted array.
 Time:O(log n)
 Space:O(1)
 Stable:No
