@@ -83,3 +83,33 @@ console.log(romanToInt("MICILDMI"));
 
 //Time complexity: Time grows with the input length → O(n).
 //Space complexity: Space stays constant regardless of input → O(1).
+
+var romanToInt = (s) => {
+    const map = {
+        I: 1, V: 5, X: 10, L:50, C:100, D:500, M:1000
+    };
+    let total = 0;
+    for(let i = 0; i<s.length; i++){
+        if(map[s[i]] < map[s[i+1]]){
+            total -= map[s[i]];
+        }else{
+            total += map[s[i]];
+        }
+    }
+    return total;
+}
+
+var romanToInt = (s) => {
+    const map = {
+        I: 1, V: 5, X: 10, L:50, C:100, D:500, M:1000
+    };
+    let total = 0;
+    for(let i = 0; i<s.length; i++){
+        if(map[s[i]] < map[s[i+1]]){
+            total -= map[s[i]];
+        }else{
+            total +=map[s[i]]
+        }
+    }
+    return total;
+}
