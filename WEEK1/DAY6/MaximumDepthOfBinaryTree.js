@@ -24,6 +24,7 @@ var maxDepth = function(root) {
 
     return 1 + Math.max(left, right);
 };
+
 //Depth is 1 + maximum depth of 
 // left and right subtree.
 //tc: O(n): visit every node once

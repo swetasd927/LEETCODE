@@ -139,7 +139,7 @@ Normalization? → Reduce redundancy
 ACID stands for? → Atomicity, Consistency, Isolation, Durability
 
 ## EXTRA MCQs
-HTTP 200? → OK
+HTTP 200? → OK 
 HTTP 404? → Not found
 TCP vs UDP? → Reliable vs fast
 Compiler? → Whole code

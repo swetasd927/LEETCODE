@@ -47,6 +47,19 @@ var once = (fn) => {
 var once = (fn) => {
     let called = false;
     let res;
+    return (...args) => {
+        if(!called) {
+            called = true;
+            res = fn(...args);
+            return result;
+        }
+        return undefined;
+    }
+}
+
+var once = (fn) => {
+    let called = false;
+    let res;
 
     return (...args) => {
         if(!called) {
