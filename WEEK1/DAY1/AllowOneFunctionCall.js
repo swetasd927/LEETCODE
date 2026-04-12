@@ -12,5 +12,48 @@ var once = function(fn) {
     };
 };
 
+
 //Time complexity: Each call is just a single function call and check: O(1)
 //Space complexity: Keeps two variable in closure(call and result) : O(1)
+
+//PRACTICE
+var one = (fn) => {
+    let called = false;
+    let res;
+
+    return (...args) => {
+        if(!called) {
+            called = true;
+            res = fn(...args);
+            return result;
+        }
+        return undefined;
+    };
+};
+
+var once = (fn) => {
+    let called = false;
+    let res;
+    return (...args) => {
+        if(!called) {
+            called = true;
+            res = fn(...args);
+            return result;
+        }
+        return undefined;
+    }
+}
+
+var once = (fn) => {
+    let called = false;
+    let res;
+
+    return (...args) => {
+        if(!called) {
+            called = true;
+            res = fn(...args);
+            return result;
+        }
+        return undefined;
+    }
+}
