@@ -21,5 +21,5 @@ var searchInsert = function(nums, target) {
     return left;
 };
 
-//i used binary search. If found return index, otherwise return left pointer after loop since it represents the correct insertion position
+// I used binary search. If found return index, otherwise return left pointer after loop since it represents the correct insertion position
 //Time: O(log n), Space: O(1)
