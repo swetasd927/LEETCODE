@@ -6,7 +6,7 @@ var findShortestSubArray = function(nums) {
     let first = {};
 
     let degree = 0;
-    let minLen = nums.length;   // ✅ FIX
+    let minLen = nums.length;  
 
     for (let i = 0; i < nums.length; i++) {
         let num = nums[i];
