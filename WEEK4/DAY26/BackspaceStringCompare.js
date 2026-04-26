@@ -23,7 +23,7 @@ var backspaceCompare = function(s, t) {
     return build(s) === build(t);
 };
 
-//i used a stack to simulate typing—push characters normally, 
+//i used a stack to simulate typing push characters normally, 
 // and pop when # appears, then compare final strings.
 
 
