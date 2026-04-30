@@ -15,7 +15,8 @@ var minCostClimbingStairs = function(cost) {
     );
 };
 
-//Use DP in-place by adding the minimum cost of the previous one or 
+//Use DP in-place by adding the minimum cost of the previous
+// one or 
 // two steps, then return the min of the last two steps.
 
 //Time Complexity: O(n)
