@@ -1,4 +1,4 @@
-# Daily Solved LeetCode Problems
+# Daily Solved LeetCode Problems : 30 days
 
 This repository is a personal documentation of my Data Structures and Algorithms (DSA) learning journey.
 
