@@ -26,3 +26,11 @@ var isSymmetric = function(root) {
 
     return isMirror(root.left, root.right);
 };
+
+
+//I’ll check if the left and right subtrees are mirror images. 
+// If both nodes are equal, then recursively compare left of one 
+//with right of the other and vice versa.” 
+
+//Time: O(n)
+//Space: O(h) (recursion stack) 
