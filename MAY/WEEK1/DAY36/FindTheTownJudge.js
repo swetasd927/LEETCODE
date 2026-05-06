@@ -19,3 +19,10 @@ var findJudge = function(n, trust) {
 
     return -1;
 };
+
+//The judge trusts nobody and is trusted by everyone else, 
+// so I’ll track in-degree and out-degree. The judge will 
+//have in-degree = n-1 and out-degree = 0.
+
+//Time: O(n + trust.length)
+//Space: O(n)
