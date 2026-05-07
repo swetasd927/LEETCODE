@@ -30,4 +30,4 @@ var isUnivalTree = function(root) {
 
 //I store the root value and perform DFS. If any node 
 //differs from the root value, I return false. Otherwise 
-//the tree is uni-valued. Time complexity is O(n).
+//the tree is uni-valued. Time complexity is O(n), space:O(n).
